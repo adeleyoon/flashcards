@@ -38,10 +38,10 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1;
+        return 1
     }
     
-    public func pickerView(_pikcerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         return CardCollection.instance.currentCard.options.count
     }
     
