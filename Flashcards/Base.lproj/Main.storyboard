@@ -37,19 +37,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-Vh-bu6">
+                                        <rect key="frame" x="0.0" y="364.5" width="341" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wr-7j-Lag">
+                                        <rect key="frame" x="0.0" y="580.5" width="341" height="30"/>
+                                        <state key="normal" title="Final Answer!"/>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QF-4p-8GJ">
-                                        <rect key="frame" x="0.0" y="364.5" width="341" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="610.5" width="341" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-Vh-bu6">
-                                        <rect key="frame" x="0.0" y="385" width="341" height="216"/>
-                                    </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wr-7j-Lag">
-                                        <rect key="frame" x="0.0" y="601" width="341" height="30"/>
-                                        <state key="normal" title="Final Answer!"/>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -61,6 +61,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="6T6-pP-iJn" secondAttribute="trailing" constant="1" id="oTe-xJ-7Iz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="questionLabel" destination="8JB-Dv-5z5" id="ZTS-bL-BR8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
